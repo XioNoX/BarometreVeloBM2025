@@ -159,6 +159,7 @@ violence_pane = []
 
 # Initialize the app
 app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 # App layout
 app.layout = html.Div([
@@ -287,4 +288,4 @@ def toggle_offcanvas(n1, is_open):
 
 # Run the app
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
