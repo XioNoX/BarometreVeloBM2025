@@ -1,0 +1,695 @@
+{
+    "q2": {
+        "question": "Veuillez indiquer la commune que vous souhaitez évaluer",
+        "category": "Introduction",
+        "type": "INSEE"
+    },
+    "q3": {
+        "question": "Résidez vous dans cette commune ?",
+        "category": "Introduction",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Oui",
+            "2": "Non"
+        }
+    },
+    "q65": {
+        "question": "Dans quelle commune résidez-vous",
+        "category": "Introduction",
+        "type": "INSEE"
+    },
+    "q4": {
+        "question": "Précisez si vous résidez dans l'un de ces quartiers prioritaires de la politique de la ville",
+        "category": "Introduction",
+        "type": "QPV"
+    },
+    "q5": {
+        "question": "Dans quel arrondissement résidez-vous ?",
+        "category": "Introduction",
+        "type": "Arrondissement"
+    },
+    "q6": {
+        "question": "A quelle fréquence circulez-vous à vélo dans la commune que vous évaluez ?",
+        "category": "Introduction",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Tous les jours ou presque",
+            "2": "1 à 3 fois par semaine",
+            "3": "1 à 3 fois par mois",
+            "4": "1 à 3 fois par an",
+            "5": "Jamais"
+        }
+    },
+    "q7": {
+        "question": "Depuis 3 ans la situation pour les cyclistes...",
+        "category": "Ressenti général",
+        "type": "Choix unique",
+        "answer": {
+            "1": "s'est déteriorée",
+            "2": "",
+            "3": "est restée identique",
+            "4": "",
+            "5": "s'est améliorée"
+        }
+    },
+    "q8": {
+        "question": "Se déplacer à vélo y est...",
+        "category": "Ressenti général",
+        "type": "Choix unique",
+        "answer": {
+            "1": "très désagréable",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "très agréable"
+        }
+    },
+    "q9": {
+        "question": "Le réseau d'itinéraires cyclables me permet d'aller partout de façon rapide et directe",
+        "category": "Ressenti général",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Pas du tout",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "Tout à fait"
+        }
+    },
+    "q10": {
+        "question": "Les conflits entre les personnes circulant à vélo et à pied y sont...",
+        "category": "Ressenti général",
+        "type": "Choix unique",
+        "answer": {
+            "1": "très fréquents",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "très rares"
+        }
+    },
+    "q11": {
+        "question": "A vélo, les personnes conduisant des véhicules motorisés me respectent",
+        "category": "Ressenti général",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Pas du tout",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "Tout à fait"
+        }
+    },
+    "q12": {
+        "question": "A vélo, je trouve que le trafic motorisé (volume et vitesse) y est...",
+        "category": "Ressenti général",
+        "type": "Choix unique",
+        "answer": {
+            "1": "insupportable",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "pas du tout gênant"
+        }
+    },
+    "q13": {
+        "question": "Selon moi, l'usage du vélo y est...",
+        "category": "Ressenti général",
+        "type": "Choix unique",
+        "answer": {
+            "1": "limité à certains (coursiers, sportifs, etc.)",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "très démocratisé"
+        }
+    },
+    "q14": {
+        "question": "En général, quand je circule à vélo je me sens...",
+        "category": "Sécurité",
+        "type": "Choix unique",
+        "answer": {
+            "1": "en danger",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "en sécurité"
+        }
+    },
+    "q15": {
+        "question": "Je peux circuler à vélo en sécurité sur les grands axes",
+        "category": "Sécurité",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Pas du tout",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "Tout à fait"
+        }
+    },
+    "q16": {
+        "question": "Je peux circuler à vélo en sécurité dans les rues résidentielles",
+        "category": "Sécurité",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Pas du tout",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "Tout à fait"
+        }
+    },
+    "q17": {
+        "question": "Je peux rejoindre à vélo en sécurité les communes voisines",
+        "category": "Sécurité",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Pas du tout",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "Tout à fait"
+        }
+    },
+    "q18": {
+        "question": "Traverser un carrefour ou un rond-point est...",
+        "category": "Sécurité",
+        "type": "Choix unique",
+        "answer": {
+            "1": "toujours dangereux",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "jamais dangereux"
+        }
+    },
+    "q19": {
+        "question": "Pour les enfants et les personnes âgées, circuler à vélo est...",
+        "category": "Sécurité",
+        "type": "Choix unique",
+        "answer": {
+            "1": "très dangereux",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "très sûr"
+        }
+    },
+    "q20": {
+        "question": "Les itinéraires cyclables sont...",
+        "category": "Confort",
+        "type": "Choix unique",
+        "answer": {
+            "1": "pas du tout confortables",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "très confortables"
+        }
+    },
+    "q21": {
+        "question": "L'entretien des itinéraires cyclables est...",
+        "category": "Confort",
+        "type": "Choix unique",
+        "answer": {
+            "1": "très mauvais",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "très bon"
+        }
+    },
+    "q22": {
+        "question": "Il y a des panneaux d'indications de directions pour les vélos",
+        "category": "Confort",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Pas du tout",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "Tout à fait"
+        }
+    },
+    "q23": {
+        "question": "Lors de travaux sur les itinéraires cyclables, une solution alternative sûre est proposée",
+        "category": "Confort",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Jamais",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "Toujours"
+        }
+    },
+    "q24": {
+        "question": "Les rues en sens unique sont ouvertes à double-sens pour les vélos",
+        "category": "Confort",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Jamais",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "Toujours"
+        }
+    },
+    "q25": {
+        "question": "Les efforts faits en faveur du vélo par la commune sont...",
+        "category": "Efforts de la commune",
+        "type": "Choix unique",
+        "answer": {
+            "1": "inexistants",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "importants"
+        }
+    },
+    "q26": {
+        "question": "La communication en faveur des déplacements à vélo est...",
+        "category": "Efforts de la commune",
+        "type": "Choix unique",
+        "answer": {
+            "1": "inexistante",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "importante"
+        }
+    },
+    "q27": {
+        "question": "La mairie est à l'écoute des besoins des usagers du vélo, elle les implique dans ses réflexions sur les mobilités et les projets d'aménagement",
+        "category": "Efforts de la commune",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Pas du tout",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "Tout à fait"
+        }
+    },
+    "q28": {
+        "question": "Le stationnement des véhicules motorisés (voitures, camions, motos...) sur les itinéraires cyclables est...",
+        "category": "Efforts de la commune",
+        "type": "Choix unique",
+        "answer": {
+            "1": "très fréquent",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "très rare"
+        }
+    },
+    "q29": {
+        "question": "Dans la commune ou à proximité, trouver un stationnement vélo adapté à mon besoin (durée, sécurité...) est...",
+        "category": "Services et stationnements",
+        "type": "Choix unique",
+        "answer": {
+            "1": "impossible",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "très facile"
+        }
+    },
+    "q30": {
+        "question": "Stationner son vélo en gare ou à une station de transports en commun est...",
+        "category": "Services et stationnements",
+        "type": "Choix unique",
+        "answer": {
+            "1": "impossible",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "très facile"
+        }
+    },
+    "q31": {
+        "question": "Louer un vélo pour quelques heures ou pour plusieurs mois est...",
+        "category": "Services et stationnements",
+        "type": "Choix unique",
+        "answer": {
+            "1": "impossible",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "très facile"
+        }
+    },
+    "q32": {
+        "question": "Dans la commune ou à proximité, trouver un magasin/atelier de réparation vélo est...",
+        "category": "Services et stationnements",
+        "type": "Choix unique",
+        "answer": {
+            "1": "impossible",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "très facile"
+        }
+    },
+    "q33": {
+        "question": "En résumé, je dirais que les conditions pour l'usage du vélo sont...",
+        "category": "Résumé",
+        "type": "Choix unique",
+        "answer": {
+            "1": "très mauvaises",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "très bonnes"
+        }
+    },
+    "q34": {
+        "question": "Les 3 critères qui me semblent les plus importants pour améliorer la pratique du vélo sont...",
+        "category": "Résumé",
+        "type": "Choix multiples",
+        "answer": {
+            "1": "Modérer la vitesse des véhicules motorisés en ville",
+            "2": "Entretenir les pistes et bandes cyclables",
+            "3": "Davantage de campagnes de communication autour du vélo",
+            "4": "Des stationnements adaptés et sécurisés pour les vélos (courte et longue durées)",
+            "5": "Faciliter le transport de vélos dans les transports publics",
+            "6": "Des itinéraires vélo rapides et directs",
+            "7": "Davantage de vélos en libre-service",
+            "8": "Limiter le trafic motorisé en ville",
+            "9": "Un réseau cyclable complet et sans coupure"
+        }
+    },
+    "q35": {
+        "question": "Un commentaire à ajouter sur la situation de l'usage du vélo dans la commune ?",
+        "category": "Résumé",
+        "type": "Texte"
+    },
+    "q36": {
+        "question": "Dans quel(s) but(s) utilisez-vous le vélo ?",
+        "category": "Profil cycliste",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Pour aller au travail",
+            "2": "Pour aller à l'écolel",
+            "3": "Pour mes déplacements utilitaires",
+            "4": "Pour accompagner mes enfants",
+            "5": "Pour le tourisme/balade",
+            "6": "Pour faire du sport"
+        }
+    },
+    "q37": {
+        "question": "A vélo, vous diriez que vous êtes...",
+        "category": "Profil cycliste",
+        "type": "Choix unique",
+        "answer": {
+            "1": "débutant·e",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "expert·e"
+        }
+    },
+    "q38": {
+        "question": "Au cours de vos déplacements à vélo, avez-vous été victime d'une de ces situations ces douze derniers mois ?",
+        "category": "Profil cycliste",
+        "type": "Choix multiples",
+        "answer": {
+            "1": "violence verbale (insultes, intimidations) alors que vous circuliez sur un aménagement cyclable",
+            "2": "Violence verbale alors que vous circuliez sur un espace partagé avec les véhicules motorisés",
+            "3": "Violence physique (contact avec un véhicule ou mouvement du véhicule vers vous, coups ou tentative de coups) alors que vous circuliez sur un aménagement cyclable",
+            "4": "Violence physique alors que vous circuliez sur un espace partagé avec les véhicules motorisés",
+            "5": "Refus de priorité et queue de poisson du conducteur",
+            "6": "Vitesse et proximité dangereuses du conducteur",
+            "7": "Pas de situation identifiée"
+        }
+    },
+    "q39": {
+        "question": "Est-ce que l'une de ces situations vous a amené à faire un dépôt de plainte/une main courante ?",
+        "category": "Profil cycliste",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Oui",
+            "2": "Non"
+        }
+    },
+    "q62": {
+        "question": "La police ou la justice ont-elles donné suite à votre plainte ?",
+        "category": "Profil cycliste",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Oui",
+            "2": "Non"
+        }
+    },
+    "q40": {
+        "question": "Votre vélo habituel est un...",
+        "category": "Profil cycliste",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Vélo personnel",
+            "2": "Vélo à assistance électrique (VAE) personnel",
+            "3": "Vélo en libre-service (Vélib', Vélo'v, V'Lille...)",
+            "4": "Vélo en location longue-durée",
+	    "5": "Vélo adapté (vélo à enjambement bas, tricycle, quadricycle, etc.)"
+        }
+    },
+    "q41": {
+        "question": "Pouvez-vous stationner facilement un vélo chez vous ou à proximité de chez vous ?",
+        "category": "Profil cycliste",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Oui, dans l'espace public",
+            "2": "Oui, dans l'espace public avec une offre sécurisée proposée par la collectivité",
+            "3": "Oui, dans mon lieu de résidence dans un espace accessible en rez-de-chaussée",
+            "4": "Oui, dans mon lieu de résidence dans une cave ou un local nécessitant l'utilisation d'escalier ou d'ascenseur",
+            "5": "Non",
+            "6": "Ne se prononce pas"
+        }
+    },
+    "q42": {
+        "question": "Avez-vous été victime d'un vol de vélo ces deux dernières années ?",
+        "category": "Profil cycliste",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Oui",
+            "2": "Non"
+        }
+    },
+    "q43": {
+        "question": "Avez-vous le permis de conduire ?",
+        "category": "Profil cycliste",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Oui",
+            "2": "Non"
+        }
+    },
+    "q44": {
+        "question": "Avez-vous une voiture ou un deux-roues motorisé ?",
+        "category": "Profil cycliste",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Oui",
+            "2": "Non"
+        }
+    },
+    "q45": {
+        "question": "Avez-vous un abonnement de transports en commun ?",
+        "category": "Profil cycliste",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Urbain (bus, tram, métro)",
+            "2": "Inter-urbain (TER, car)",
+            "3": "Les deux",
+            "4": "Non"
+        }
+    },
+    "q46": {
+        "question": "Êtes-vous adhérent·e d'une association d'usagers du vélo (réseau FUB) ?",
+        "category": "Profil cycliste",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Oui",
+            "2": "Non"
+        }
+    },
+    "q47": {
+        "question": "Quel est votre genre ?",
+        "category": "Profil cycliste",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Féminin",
+            "2": "Masculin",
+            "3": "Ne se prononce pas"
+        }
+    },
+    "q48": {
+        "question": "Quelle est votre tranche d'âge ?",
+        "category": "Profil cycliste",
+        "type": "Choix unique",
+        "answer": {
+	        "0": "Moins de 11 ans",
+            "1": "11-14 ans",
+            "2": "15-18 ans",
+            "3": "19-24 ans",
+            "4": "25-34 ans",
+            "5": "35-44 ans",
+            "6": "45-54 ans",
+            "7": "55-64 ans",
+            "8": "65-75 ans",
+            "9": "Plus de 75 ans",
+            "10": "Ne se prononce pas"
+        }
+    },
+    "q49": {
+        "question": "Comment vous déplacez-vous habituellement ?",
+        "category": "Profil non cycliste",
+        "type": "Choix multiples",
+        "answer": {
+            "1": "En voiture",
+            "2": "En deux-roues motorisé",
+            "3": "En transport en commun",
+            "4": "A pied",
+            "5": "En trotinette ou assimilé",
+            "6": "Je ne me déplace pas",
+            "7": "Autre"
+        }
+    },
+    "q50": {
+        "question": "Possédez-vous un vélo ?",
+        "category": "Profil non cycliste",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Oui, en bon état",
+            "2": "Oui, en état médiocre",
+            "3": "Oui, en mauvais état",
+            "4": "Non"
+        }
+    },
+    "q51": {
+        "question": "Pour quelles raisons ne faites-vous pas de vélo ?",
+        "category": "Profil non cycliste",
+        "type": "Choix multiples",
+        "answer": {
+            "1": "Vitesse des véhicules motorisés est trop élevée",
+            "2": "Pas assez d'aménagements cyclables",
+            "3": "Je ne me sens pas en sécurité à vélo",
+            "4": "Trop de pollution",
+            "5": "Trop de véhicules motorisés",
+            "6": "J'habite trop loin de mon lieu de travail/d'études",
+            "7": "Je préfère utiliser ma voiture",
+            "8": "Je préfère utiliser les transports en commun",
+            "9": "Peur de me faire voler mon vélo",
+            "10": "Je n'ai pas de vélo",
+            "11": "Raisons de santé",
+            "12": "Pas possible de prendre de vélo dans les transports en commun",
+            "13": "Je ne sais pas faire de vélo",
+            "14": "Mauvaises conditions météorologiques",
+            "15": "Trop lent",
+            "16": "Faire du vélo est mal perçu dans mon entourage professionnel et/ou personnel",
+            "17": "Compliqué d’amener des enfants à l'école à vélo",
+            "18": "Coût élevé",
+            "19": "Pas de douche sur mon lieu de travail",
+            "20": "Je ne sais pas",
+            "21": "Je n'aime pas le vélo"
+        }
+    },
+    "q52": {
+        "question": "A vélo, vous diriez que vous êtes...",
+        "category": "Profil non cycliste",
+        "type": "Choix unique",
+        "answer": {
+            "1": "débutant·e",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "expert·e"
+        }
+    },
+    "q53": {
+        "question": "Avez-vous le permis de conduire ?",
+        "category": "Profil non cycliste",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Oui",
+            "2": "Non"
+        }
+    },
+    "q54": {
+        "question": "Avez-vous une voiture ou un deux-roues motorisé ?",
+        "category": "Profil non cycliste",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Oui",
+            "2": "Non"
+        }
+    },
+    "q55": {
+        "question": "Avez-vous un abonnement de transports en commun ?",
+        "category": "Profil non cycliste",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Urbain (bus, tram, métro)",
+            "2": "Inter-urbain (TER, car)",
+            "3": "Les deux",
+            "4": "Non"
+        }
+    },
+    "q56": {
+        "question": "Quel est votre genre ?",
+        "category": "Profil non cycliste",
+        "type": "Choix unique",
+        "answer": {
+            "1": "Féminin",
+            "2": "Masculin",
+            "3": "Ne se prononce pas"
+        }
+    },
+    "q57": {
+        "question": "Quelle est votre tranche d'âge ?",
+        "category": "Profil non cycliste",
+        "type": "Choix unique",
+        "answer": {
+	    "0": "Moins de 11 ans",
+            "1": "11-14 ans",
+            "2": "15-18 ans",
+            "3": "19-24 ans",
+            "4": "25-34 ans",
+            "5": "35-44 ans",
+            "6": "45-54 ans",
+            "7": "55-64 ans",
+            "8": "65-75 ans",
+            "9": "Plus de 75 ans",
+            "10": "Ne se prononce pas"
+        }
+    }
+}
