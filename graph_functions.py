@@ -182,7 +182,7 @@ def categorie_info(data, categorie):
         Histograme de la répartition des notes de la catégorie.
 
     """
-    note = round(data[categorie].mean(), 2)
+    note = round(data[categorie.upper()].mean(), 2)
     b = progress(note)
     histogramme = px.histogram(data[categorie],
                                range_x=[0.5, 6.5],

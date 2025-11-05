@@ -23,6 +23,19 @@ for q in ['q2', 'q3', 'q6', 'q7', 'q8', 'q9', 'q10', 'q11', 'q12', 'q13',
           'q50', 'q52', 'q53', 'q54', 'q55', 'q56', 'q57', 'q65']:
     df[q] = df[q].astype('Int64')
 
+categories = {'ressenti': ['q8', 'q9', 'q10', 'q11', 'q12', 'q13'],
+              'securite': ['q14', 'q15', 'q16', 'q17', 'q18', 'q19'],
+              'confort': ['q20', 'q21', 'q22', 'q23', 'q24'],
+              'efforts': ['q25', 'q26', 'q27', 'q28'],
+              'services': ['q29', 'q30', 'q31', 'q32']
+              }
+
+for c in categories:
+    df[c.upper()] = sum([df[col] 
+                         for col in categories[c]]) / len(categories[c])
+
+df['NOTE'] = sum([df[c.upper()] for c in categories]) / len(categories)
+
 # Extraction des données de Seine-Maritime et intégration des noms de communes
 communes = pd.read_csv('./data/EPCI_2025/communes_2024.csv')
 communes = communes.loc[communes['DEP'] == '76']
@@ -204,12 +217,6 @@ synthese_pane = dbc.Container(
     )
 
 # Panneaux des catégories
-categories = {'ressenti': ['q8', 'q9', 'q10', 'q11', 'q12', 'q13'],
-              'securite': ['q14', 'q15', 'q16', 'q17', 'q18', 'q19'],
-              'confort': ['q20', 'q21', 'q22', 'q23', 'q24'],
-              'efforts': ['q25', 'q26', 'q27', 'q28'],
-              'services': ['q29', 'q30', 'q31', 'q32']
-              }
 
 ressenti_pane = panel_content('ressenti',
                               ['q8', 'q9', 'q10', 'q11', 'q12', 'q13'])
@@ -304,10 +311,9 @@ app.layout = html.Div([
                                 id='open-offcanvas',
                                 n_clicks=0))]),
     html.Div(selection_pane),
-    dcc.Loading(id="loading", 
-                type='default', 
-                children=html.Div(id="loading-output"), 
-                color='magenta'),
+    dcc.Loading(id="loading",
+                type='default',
+                children=html.Div(id="loading-output")),
     dbc.Tabs([
         dbc.Tab(label="Présentation", children=presentation_pane),
         dbc.Tab(label='Synthèse', children=synthese_pane),
@@ -324,7 +330,6 @@ app.layout = html.Div([
 ])
 
 io = [
-      Output("loading-output","children"),
       Output('commune', 'children'),
       Output('note', 'children'),
       Output('ressenti', 'children'),
@@ -371,6 +376,7 @@ io.extend([
     ])
 
 io.append(Output('commentaires', 'children'))
+io.append(Output("loading-output", "children"))
 
 io.extend([
     Input('ville_selection', 'value'),
@@ -430,14 +436,13 @@ def update(commune, genre, expertise, pratique, age):
     nb_val_rep = len(data)
     cyclist_df = data.loc[df['q6'] != 5]
     nb_rep_cyclist = len(cyclist_df)
-    return_value = [None,
-                    commune,
-                    progress(note(data, 'score')),
-                    progress(note(data, 'ressenti')),
-                    progress(note(data, 'securite')),
-                    progress(note(data, 'confort')),
-                    progress(note(data, 'efforts')),
-                    progress(note(data, 'services')),
+    return_value = [commune,
+                    progress(note(data, 'NOTE')),
+                    progress(note(data, 'ressenti'.upper())),
+                    progress(note(data, 'securite'.upper())),
+                    progress(note(data, 'confort'.upper())),
+                    progress(note(data, 'efforts'.upper())),
+                    progress(note(data, 'services'.upper())),
                     evolution(data),
                     nb_rep,
                     nb_val_rep,
@@ -472,6 +477,7 @@ def update(commune, genre, expertise, pratique, age):
     return_value.append(question_histogramme(data, 'q62')),
 
     return_value.append(commentaires(data))
+    return_value.append(None)
 
     return tuple(return_value)
 
